@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macro Flow / 宏观金融流动学习器</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>Macro Flow <span>/ 宏观金融流动学习器</span></h1>
+        <p class="subtitle">看见宏观变量如何互相传导，而不是背术语。</p>
+      </header>
+
+      <section class="panel scenarios">
+        <h2>情景模拟器</h2>
+        <div id="scenario-buttons" class="button-row"></div>
+        <div class="market-theme">
+          <span>当前市场主线</span>
+          <strong id="market-theme-text">尚未选择情景</strong>
+        </div>
+      </section>
+
+      <section class="panel map-panel">
+        <h2>关系地图</h2>
+        <div class="map-and-card">
+          <div class="map-wrap">
+            <svg id="relation-edges" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid meet"></svg>
+            <div id="nodes-layer"></div>
+          </div>
+
+          <aside class="explain-card" id="explain-card">
+            <h3>点击节点开始学习</h3>
+            <p>你会看到这个变量如何影响其他变量，以及一条人话版因果链。</p>
+            <ul>
+              <li>绿色：支撑 / 增强</li>
+              <li>红色：压力 / 抑制</li>
+              <li>黄色：条件性 / 复杂关系</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
